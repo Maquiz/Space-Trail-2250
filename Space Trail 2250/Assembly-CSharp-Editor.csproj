@@ -64,6 +64,40 @@
     <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
     <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Editor\CFX_InspectorHelpEditor.cs" />
     <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Editor\CFX_SpawnSystemEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\BloomModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\BuiltinDebugViewsEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\ChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\ColorGradingModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\DefaultPostFxModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\DitheringModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\FogModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\GrainModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\MotionBlurModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\ScreenSpaceReflectionModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\UserLutModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\VignetteModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Monitors\HistogramMonitor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Monitors\ParadeMonitor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Monitors\VectorscopeMonitor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Monitors\WaveformMonitor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PostProcessingFactory.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PostProcessingInspector.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PostProcessingModelEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PostProcessingMonitor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PropertyDrawers\GetSetDrawer.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PropertyDrawers\MinDrawer.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\PropertyDrawers\TrackballGroupDrawer.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Utils\CurveEditor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Utils\EditorResources.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Utils\FxStyles.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/artstudent/Documents/GitHub/Space-Trail-2250/Space Trail 2250/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -313,12 +347,15 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
+=======
+>>>>>>> b6b79f107d9e479044b8a3d44622b90754e14513
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -342,12 +379,15 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+<<<<<<< HEAD
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+=======
+>>>>>>> b6b79f107d9e479044b8a3d44622b90754e14513
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

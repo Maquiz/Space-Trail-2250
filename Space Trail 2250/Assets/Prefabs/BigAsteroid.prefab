@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1546835692964564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1341715, y: 12.41912, z: 0.0089354}
+  m_LocalPosition: {x: -0.84376717, y: 35.837257, z: 0.0089354}
   m_LocalScale: {x: 3.0972, y: 3.0972, z: 3.0972}
   m_Children: []
   m_Father: {fileID: 0}
@@ -130,3 +130,4 @@ MonoBehaviour:
   smallAsteroid: {fileID: 1169495802840064, guid: 6f95dcf52cd112a4da5ff7833d85a1ea,
     type: 2}
   isBig: 0
+  dmg: 100

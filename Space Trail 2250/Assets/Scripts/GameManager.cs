@@ -1,13 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
                                                             // private BoardManager boardScript;                       //Store a reference to our BoardManager which will set up the level.
-    private int level = 0;                                  //Current level number, expressed in game as "Day 1".
+    public GameObject Player;
+    public int ammo;
+    public float fuel,maxFuel;
+    public float oxygen, maxOxygen;
+    public int crystal;
+    public int food,maxFood;
+
+
 
     //Awake is always called before any Start functions
     void Awake()
@@ -27,10 +35,6 @@ public class GameManager : MonoBehaviour
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
 
-        //Get a component reference to the attached BoardManager script
-        // boardScript = GetComponent<BoardManager>();
-
-        //Call the InitGame function to initialize the first level 
         InitGame();
     }
 
@@ -39,7 +43,21 @@ public class GameManager : MonoBehaviour
     {
         //Call the SetupScene function of the BoardManager script, pass it current level number.
         //boardScript.SetupScene(level);
+        //load start scene
+        ammo = 400;
+        maxFuel = 100;
+        fuel = 100;
+        maxOxygen = 100;
+        oxygen = 100;
+        crystal = 1000;
+        maxFood = 1000;
+        food = 1000;
 
+    }
+
+    public void changeLevel(string name){
+
+        SceneManager.LoadScene(name);
     }
 
 }
