@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlightControl : MonoBehaviour {
 
-    public int health;
+   
     private Rigidbody rb;
     public GameObject bullet;
     public GameObject gun1, gun2;
@@ -28,18 +28,23 @@ public class FlightControl : MonoBehaviour {
             //move right
             rb.AddForce(new Vector3(5, 0, 0), ForceMode.VelocityChange);
         }
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Instantiate(bullet, gun1.transform.position, Quaternion.identity);
-            Instantiate(bullet, gun2.transform.position, Quaternion.identity);
+        if (gm.ammo > 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Instantiate(bullet, gun1.transform.position, Quaternion.identity);
+                Instantiate(bullet, gun2.transform.position, Quaternion.identity);
+                gm.ammo -= 2;
+            }
         }
-        if (health <= 0) {
+        if (gm.food <= 0) {
             playerlife = PSTATE.DEAD;
         }
     }
 
 
     public void takeDamage(int dmg) {
-        health -= dmg;
+        gm.food -= dmg;
         print("Player took" + dmg +"damage");
     }
     public void getPowerUp(int type, int amount)

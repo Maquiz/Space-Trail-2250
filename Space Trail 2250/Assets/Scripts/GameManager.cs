@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour
                                                             // private BoardManager boardScript;                       //Store a reference to our BoardManager which will set up the level.
     public GameObject Player;
     public int ammo;
-    public float fuel;
-    public float oxygen;
+    public float fuel,maxFuel;
+    public float oxygen, maxOxygen;
     public int crystal;
-    public int food;
+    public int food,maxFood;
 
 
 
@@ -44,11 +44,15 @@ public class GameManager : MonoBehaviour
         //Call the SetupScene function of the BoardManager script, pass it current level number.
         //boardScript.SetupScene(level);
         //load start scene
-        ammo = 500;
+        ammo = 400;
+        maxFuel = 100;
         fuel = 100;
+        maxOxygen = 100;
         oxygen = 100;
         crystal = 1000;
-        food = 100;
+        maxFood = 1000;
+        food = 1000;
+
     }
 
     public void changeLevel(string name){
