@@ -7,7 +7,7 @@ public class HaloControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		halo = GetComponent>
+		//halo = GetComponent>
 	}
 	
 	// Update is called once per frame
