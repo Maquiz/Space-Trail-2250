@@ -61,33 +61,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Asteroid.cs" />
-    <Compile Include="Assets\Bullet.cs" />
-    <Compile Include="Assets\CleanUp.cs" />
-    <Compile Include="Assets\FlightControl.cs" />
-    <Compile Include="Assets\HaloControl.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX2_Demo.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutodestructWhenNoChildren.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_InspectorHelp.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_ShurikenThreadFix.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX2_AutoRotate.cs" />
-    <Compile Include="Assets\JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs" />
-    <Compile Include="Assets\TridentBadGuy.cs" />
-    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
-    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Add.shader" />
-    <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
-    <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
-    <None Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_WaterWiggle.shader" />
-    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAB_Alpha8.shader" />
-    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Tint.shader" />
-    <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX2 Readme.txt" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX2_Demo.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutodestructWhenNoChildren.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Scripts\CFX_InspectorHelp.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Scripts\CFX_ShurikenThreadFix.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Scripts\CFX2_AutoRotate.cs" />
+    <Compile Include="Assets\Art Assets\JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs" />
+    <Compile Include="Assets\MainMenuStartScreen.cs" />
+    <Compile Include="Assets\Scripts\Asteroid.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\CleanUp.cs" />
+    <Compile Include="Assets\Scripts\FlightControl.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\HaloControl.cs" />
+    <Compile Include="Assets\Scripts\TridentBadGuy.cs" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Add.shader" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\Art Assets\JMO Assets\!JMO Assets Readme.txt" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_WaterWiggle.shader" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAB_Alpha8.shader" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Tint.shader" />
+    <None Include="Assets\Art Assets\JMO Assets\Cartoon FX\CartoonFX2 Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/MaxBo/OneDrive/Documents/GitHub/Space-Trail-2250/Space Trail 2250/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

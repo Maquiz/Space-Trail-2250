@@ -6,6 +6,7 @@ public class TridentBadGuy : MonoBehaviour {
 
     public Rigidbody rb;
     public GameObject explosion;
+    //public GameObject BulletB;
     // Use this for initialization
     void Start () {
        // rb = GetComponent<Rigidbody>();
@@ -20,6 +21,7 @@ public class TridentBadGuy : MonoBehaviour {
     {
         if (other.tag == "Player") {
             print("I see the player");
+            //Instantiate(Bulletbad);
             //This is where we shoot
         }
     }
