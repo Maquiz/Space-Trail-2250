@@ -8,6 +8,7 @@ public class Asteroid : MonoBehaviour {
     public GameObject explosion;
     public GameObject smallAsteroid;
     public bool isBig;
+    public int dmg;
 
     // Use this for initialization
     void Start () {
@@ -21,6 +22,10 @@ public class Asteroid : MonoBehaviour {
         print("Hit");
         if (isBig) {
             Instantiate(smallAsteroid, gameObject.transform.position, Quaternion.Euler(45,0,0));
+        }
+        if (collision.gameObject.tag == "Player") {
+            FlightControl fc = collision.gameObject.GetComponent<FlightControl>();
+            fc.takeDamage(dmg);
         }
         Destroy(this.gameObject);
     }

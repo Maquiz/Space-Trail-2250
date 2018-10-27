@@ -166,5 +166,3 @@ C:\Users\MaxBo\OneDrive\Documents\GitHub\Space-Trail-2250\Space Trail 2250\obj\D
 C:\Users\MaxBo\OneDrive\Documents\GitHub\Space-Trail-2250\Space Trail 2250\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\MaxBo\OneDrive\Documents\GitHub\Space-Trail-2250\Space Trail 2250\obj\Debug\Assembly-CSharp.dll
 C:\Users\MaxBo\OneDrive\Documents\GitHub\Space-Trail-2250\Space Trail 2250\obj\Debug\Assembly-CSharp.pdb
-C:\Users\MaxBo\OneDrive\Documents\GitHub\Space-Trail-2250\Space Trail 2250\Temp\bin\Debug\UnityEditor.UI.dll
-C:\Users\MaxBo\OneDrive\Documents\GitHub\Space-Trail-2250\Space Trail 2250\Temp\bin\Debug\UnityEditor.UI.xml
