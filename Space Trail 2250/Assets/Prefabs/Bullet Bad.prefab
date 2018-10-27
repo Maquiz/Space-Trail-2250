@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619306486019860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.81, y: -2.15, z: -0.14927578}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.086246945, y: 0.086246945, z: 0.086246945}
   m_Children: []
   m_Father: {fileID: 0}
@@ -160,7 +160,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.98823535, g: 0.9921569, b: 0.07058824, a: 1}
+      key0: {r: 0.9339623, g: 0, b: 0.036946956, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
   isBad: 1
   speed: 10
   dmg: 100
+  explosion: {fileID: 1577475681687476, guid: ffaf15a66bb3d48bcace7fab66b499c4, type: 2}
 --- !u!122 &122901721209615318
 Halo:
   m_ObjectHideFlags: 1
@@ -218,7 +219,7 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4279434748
+    rgba: 4280225771
   m_Size: 0.13
 --- !u!136 &136704538560289334
 CapsuleCollider:

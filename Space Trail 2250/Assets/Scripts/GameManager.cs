@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,7 +9,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
                                                             // private BoardManager boardScript;                       //Store a reference to our BoardManager which will set up the level.
     public GameObject Player;
-    public int energy;
+    public int ammo;
+    public float fuel;
+    public float oxygen;
+    public int crystal;
+    public int food;
 
 
 
@@ -38,7 +43,17 @@ public class GameManager : MonoBehaviour
     {
         //Call the SetupScene function of the BoardManager script, pass it current level number.
         //boardScript.SetupScene(level);
+        //load start scene
+        ammo = 500;
+        fuel = 100;
+        oxygen = 100;
+        crystal = 1000;
+        food = 100;
+    }
 
+    public void changeLevel(string name){
+
+        SceneManager.LoadScene(name);
     }
 
 }

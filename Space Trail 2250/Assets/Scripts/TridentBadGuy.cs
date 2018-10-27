@@ -10,6 +10,7 @@ public class TridentBadGuy : MonoBehaviour {
     public Transform firepos;
     public int dmg;
     public enum ESTATE { INVISIBLE, VISIBLE, DEAD };
+    private IEnumerator coroutine;
     ESTATE e;
     // Use this for initialization
     void Start () {
@@ -20,17 +21,15 @@ public class TridentBadGuy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (e == ESTATE.VISIBLE) {
-           // Instantiate(BulletB, firepos.transform.position, Quaternion.identity);
-        }
+
 
 
     }
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player") {
-           
-           
+            //Instantiate(BulletB, firepos.transform.position, Quaternion.identity);
+
             print("I see the player");
             //This is where we shoot
         }
@@ -51,6 +50,24 @@ public class TridentBadGuy : MonoBehaviour {
     public void OnBecameVisible()
     {
         e = ESTATE.VISIBLE;
-   
+        if (e == ESTATE.VISIBLE)
+        {
+            print("Should be shooting");
+            //Instantiate(BulletB, firepos.transform.position, Quaternion.identity);
+            coroutine = WaitAndShoot(1.0f);
+            StartCoroutine(coroutine);
+
+        }
+
+    }
+    // every 2 seconds perform the print()
+    private IEnumerator WaitAndShoot(float waitTime)
+    {
+
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            Instantiate(BulletB, firepos.transform.position, Quaternion.identity);
+        }
     }
 }

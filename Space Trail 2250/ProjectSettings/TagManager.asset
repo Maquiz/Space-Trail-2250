@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
+  - GameMaster
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Player1Bullet
   - Player2Bullet
   - Player2
-  - 
+  - Walls
   - 
   - 
   - 

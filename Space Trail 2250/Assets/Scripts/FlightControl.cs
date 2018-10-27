@@ -10,10 +10,11 @@ public class FlightControl : MonoBehaviour {
     public GameObject gun1, gun2;
     public enum PSTATE { ALIVE, DEAD };
     public PSTATE playerlife;
+    private GameManager gm;
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
-
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameManager>();
         playerlife = PSTATE.ALIVE;
 	}
 	
@@ -40,6 +41,12 @@ public class FlightControl : MonoBehaviour {
     public void takeDamage(int dmg) {
         health -= dmg;
         print("Player took" + dmg +"damage");
+    }
+    public void getPowerUp(int type, int amount)
+    {
+        if(type == 0){
+            gm.crystal += amount;
+        }
     }
 
 }
