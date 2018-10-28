@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public float oxygen, maxOxygen;
     public int crystal;
     public int food,maxFood;
+    public Canvas c;
 
 
 
@@ -49,17 +50,80 @@ public class GameManager : MonoBehaviour
         fuel = 100;
         maxOxygen = 100;
         oxygen = 100;
-        crystal = 1000;
+        crystal = 100;
         maxFood = 1000;
         food = 1000;
 
+    }
+
+    private void Update()
+    {
+        if(food <= 0 ){
+            gameOver();
+
+        } else if(oxygen <= 0)
+        {
+
+            gameOver();
+
+        }
+        else if (fuel <= 0)
+        {
+
+            gameOver();
+        }
     }
 
     public void changeLevel(string name){
 
         SceneManager.LoadScene(name);
     }
+    public void gameOver(){
 
+        changeLevel("Main Menu");
+        ammo = 400;
+        maxFuel = 100;
+        fuel = 100;
+        maxOxygen = 100;
+        oxygen = 100;
+        crystal = 100;
+        maxFood = 1000;
+        food = 1000;
+
+    }
+
+    public void addAmmo(){
+        if (crystal >= 10)
+        {
+            ammo += 100;
+            crystal -= 10;
+        }
+    }
+    public void addFuel()
+    {
+            if (crystal >= 10)
+            {
+                fuel += 100;
+                crystal -= 10;
+            }
+    }
+    public void addHealth()
+    {
+        if (crystal >= 10)
+        {
+            food += 100;
+            crystal -= 10;
+        }
+    }
+
+    public void addOxygen()
+    {
+        if (crystal >= 10)
+        {
+            oxygen += 100;
+            crystal -= 10;
+        }
+    }
 }
 
 
