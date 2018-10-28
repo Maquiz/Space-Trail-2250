@@ -7799,7 +7799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5b928c46cb3422aab6156c8832652c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlace: DialogueScene1
+  nextPlace: MarsDialogue
   isCalaminity: 0
 --- !u!1 &1755731530
 GameObject:
