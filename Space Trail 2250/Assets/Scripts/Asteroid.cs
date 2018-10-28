@@ -9,6 +9,7 @@ public class Asteroid : MonoBehaviour {
     public GameObject smallAsteroid;
     public bool isBig;
     public int dmg;
+    public AudioSource audioSource;
 
     // Use this for initialization
     void Start () {
@@ -20,6 +21,7 @@ public class Asteroid : MonoBehaviour {
     {
         Instantiate(explosion,gameObject.transform.position, Quaternion.identity);
         print("Hit");
+        audioSource.Play();
         if (isBig) {
             Instantiate(smallAsteroid, gameObject.transform.position, Quaternion.Euler(45,0,0));
         }

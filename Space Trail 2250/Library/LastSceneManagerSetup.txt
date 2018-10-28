@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MarsDialogue.unity
+- path: Assets/Scenes/Mars Transportaion.unity
   isLoaded: 1
   isActive: 1

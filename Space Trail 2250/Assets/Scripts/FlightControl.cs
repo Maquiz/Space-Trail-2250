@@ -11,6 +11,7 @@ public class FlightControl : MonoBehaviour {
     public enum PSTATE { ALIVE, DEAD };
     public PSTATE playerlife;
     private GameManager gm;
+    public AudioSource audioSource;
 
     // Use this for initialization
     void Start() {
@@ -56,6 +57,7 @@ public class FlightControl : MonoBehaviour {
         Instantiate(bullet, gun1.transform.position, Quaternion.identity);
         Instantiate(bullet, gun2.transform.position, Quaternion.identity);
         gm.ammo -= 2;
+        audioSource.Play();
     }
     public void moveLeft() {
         rb.AddForce(new Vector3(-5, 0, 0), ForceMode.VelocityChange);
