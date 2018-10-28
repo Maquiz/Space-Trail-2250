@@ -1048,8 +1048,8 @@ MonoBehaviour:
   dialogue:
     name: 'Moon Colony: Artemis'
     sentences:
-    - Hey, I'm Jazz welcome to Artemis!
-    - I'm here to guide you through our first city on the moon...
+    - Greetings, Earthling. I'm Robo-Unit Jazzy 09.226 - welcome to the colony!
+    - I see you're off to Mars next...
     - 'Do you need any supplies? '
 --- !u!114 &1062551759
 MonoBehaviour:
