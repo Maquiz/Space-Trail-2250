@@ -11,6 +11,7 @@ public class FlightControl : MonoBehaviour {
     public enum PSTATE { ALIVE, DEAD };
     public PSTATE playerlife;
     private GameManager gm;
+
     // Use this for initialization
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -37,9 +38,7 @@ public class FlightControl : MonoBehaviour {
                 gm.ammo -= 2;
             }
         }
-        if (gm.food <= 0) {
-            playerlife = PSTATE.DEAD;
-        }
+
     }
 
 
@@ -64,5 +63,6 @@ public class FlightControl : MonoBehaviour {
     public void moveRight() {
         rb.AddForce(new Vector3(5, 0, 0), ForceMode.VelocityChange);
     }
+
 
 }
